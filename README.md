@@ -21,7 +21,7 @@
 
 <span style="color:skyblue">**3-Express JS**</span> [(link)](https://expressjs.com/)
 
-## <span style="color:violet">Tutorial</span>
+## <span style="color:violet">Video Tutorial</span>
 
 Use this `link` to access a video tutorial: [Adrian Strozzi - Express Note Taker](https://drive.google.com/file/d/1jfGz8Xs4U8RkGF-7WY0VY_lAHDw_tWhm/view?usp=sharing)
 
