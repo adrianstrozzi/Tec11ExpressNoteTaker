@@ -5,7 +5,7 @@
 1. [Description](#Description)
 2. [Stack](#Stack)
 3. [Video Tutorial](#Video-Tutorial)
-4. [Usage](#Tutorial)
+4. [Usage](#Usage)
 5. [Credits](#Credits)
 6. [License](#License)
 
