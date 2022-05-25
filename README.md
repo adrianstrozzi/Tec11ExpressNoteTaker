@@ -4,9 +4,9 @@
 
 1. [Description](#Description)
 2. [Stack](#Stack)
-3. [Tutorial](#Tutorial)
-4. [Contributing](#Usage)
-5. [Tests](#Credits)
+3. [Video Tutorial](#Video-Tutorial)
+4. [Usage](#Tutorial)
+5. [Credits](#Credits)
 6. [License](#License)
 
 ## <span style="color:violet">Description</span>
