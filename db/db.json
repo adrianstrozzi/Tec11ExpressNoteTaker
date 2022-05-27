@@ -1,17 +1,7 @@
 [
     {
         "title": "Test 1",
-        "text": "text test 1",
-        "ote_id": "ed3e"
-    },
-    {
-        "title": "Test 2",
-        "text": "test 2.tyext ",
-        "ote_id": "76fc"
-    },
-    {
-        "title": "Super",
-        "text": "Voy a comprar frutas y verdura",
-        "ote_id": "2b64"
+        "text": "test test test",
+        "id": "480e"
     }
 ]

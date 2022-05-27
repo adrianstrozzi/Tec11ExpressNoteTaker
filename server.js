@@ -1,4 +1,4 @@
-const { readAndAppend, readFromFile } = require('./helpers/fsUtils');
+const { readAndAppend, readFromFile, writeToFile } = require('./helpers/fsUtils');
 const express = require('express');
 const path = require('path');
 const uuid = require('./helpers/uuid');
@@ -14,11 +14,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, 'public/index.html'))
+  res.sendFile(path.join(__dirname, './public/index.html'))
 );
 
 app.get('/notes', (req, res) =>
-  res.sendFile(path.join(__dirname, 'public/notes.html'))
+  res.sendFile(path.join(__dirname, './public/notes.html'))
 );
 
 app.get('/api/notes', (req, res) => {
@@ -26,9 +26,14 @@ app.get('/api/notes', (req, res) => {
   return res.json(notes);
 });
 
+// app.get('/api/notes/:id', (req, res) => {
+//   let savedNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+//   res.json(savedNotes[Number(req.params.id)]);
+// });
+
+
 // POST Route for submitting feedback
 app.post('/api/notes', (req, res) => {
-  let savedNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
   // Destructuring assignment for the items in req.body
   const { title, text } = req.body;
 
@@ -38,7 +43,7 @@ app.post('/api/notes', (req, res) => {
     const newNote = {
       title,
       text,
-      note_id: uuid(),
+      id: uuid(),
     };
 
     readAndAppend(newNote, './db/db.json');
@@ -52,6 +57,23 @@ app.post('/api/notes', (req, res) => {
   } else {
     res.json('Error in posting feedback');
   }
+});
+
+
+app.delete('/api/notes/:id', (req, res) => {
+  const noteId = req.params.id;
+  readFromFile('./db/db.json')
+    .then((data) => JSON.parse(data))
+    .then((json) => {
+      // Make a new array of all notes except the one with the ID provided in the URL
+      const result = json.filter((note) => note.id !== noteId);
+
+      // Save that array to the filesystem
+      writeToFile('./db/db.json', result);
+
+      // Respond to the DELETE request
+      res.json(`Note ${noteId} has been deleted 🗑️`);
+    });
 });
 
 app.listen(PORT, () =>
