@@ -12,9 +12,7 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, './public/index.html'))
-);
+
 
 app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, './public/notes.html'))
@@ -24,6 +22,10 @@ app.get('/api/notes', (req, res) => {
   console.info(`${req.method} request received to get Notes`);
   return res.json(notes);
 });
+
+app.get('/', (req, res) =>
+  res.sendFile(path.join(__dirname, './public/index.html'))
+);
 
 
 // POST Route for submitting feedback
@@ -48,6 +50,7 @@ app.post('/api/notes', (req, res) => {
     };
 
     res.json(response);
+    console.info(`New note with ID ${newNote.id} created.`);
   } else {
     res.json('Error in posting feedback');
   }
@@ -66,7 +69,8 @@ app.delete('/api/notes/:id', (req, res) => {
       writeToFile('./db/db.json', result);
 
       // Respond to the DELETE request
-      res.json(`Note ${noteId} has been deleted 🗑️`);
+      res.json(result);
+      console.info(`Note with ID ${noteId} deleted.`);
     });
 });
 
