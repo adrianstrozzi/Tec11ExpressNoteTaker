@@ -2,7 +2,6 @@ const { readAndAppend, readFromFile, writeToFile } = require('./helpers/fsUtils'
 const express = require('express');
 const path = require('path');
 const uuid = require('./helpers/uuid');
-const fs = require("fs");
 
 const app = express();
 const PORT = 3001;
@@ -25,11 +24,6 @@ app.get('/api/notes', (req, res) => {
   console.info(`${req.method} request received to get Notes`);
   return res.json(notes);
 });
-
-// app.get('/api/notes/:id', (req, res) => {
-//   let savedNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
-//   res.json(savedNotes[Number(req.params.id)]);
-// });
 
 
 // POST Route for submitting feedback
