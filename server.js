@@ -4,7 +4,7 @@ const path = require('path');
 const uuid = require('./helpers/uuid');
 
 const app = express();
-const PORT = `process.env.PORT || 3001`
+const PORT = process.env.PORT || 3001
 
 const notes = require('./db/db.json');
 
