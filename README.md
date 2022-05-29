@@ -6,7 +6,7 @@
 2. [Stack](#Stack)
 3. [How To Use](#How-To-Use)
 4. [Video Tutorial](#Video-Tutorial)
-5. [Usage](#Usage)
+5. [Quick Guide](#Quick-Guide)
 6. [Credits](#Credits)
 7. [License](#License)
 
