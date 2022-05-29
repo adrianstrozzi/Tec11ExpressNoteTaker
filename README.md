@@ -27,7 +27,7 @@
 
 ## <span style="color:violet">How to use</span>
 
-Use this `link` to access the App: [Adrian Strozzi - Express Note Taker](https://drive.google.com/file/d/1jfGz8Xs4U8RkGF-7WY0VY_lAHDw_tWhm/view?usp=sharing)
+Use this `link` to access the App: [Express Note Taker](https://limitless-oasis-12962.herokuapp.com/)
 
 ## <span style="color:violet">Video Tutorial</span>
 
@@ -37,35 +37,35 @@ Use this `link` to access a video tutorial: [Adrian Strozzi - Express Note Taker
 
 Once you access you will be taken to the `Home Page` just click on the `Get Started` button:
 
-![mainpage](./images/homer.png)
+![mainpage](./public/assets/images/home.png)
 
 You will see the main `Notes` interface:
 
-![mainpage](./images/note.page.png)
+![mainpage](./public/assets/images/note-page.png)
 
 Just start writing some text in the `note title` and `note text`:
 
-![mainpage](./images/note-write.png)
+![mainpage](./public/assets/images//note-write.png)
 
 Once you have finished writing your note, click on the `save icon` that will appear in the top-right:
 
-![mainpage](./images/save.png)
+![mainpage](./public/assets/images/save.png)
 
 Your `new note` will be saved and shown on the left side:
 
-![mainpage](./images/created-note.png)
+![mainpage](./public/assets/images/created-note.png)
 
 You can `delete` your note by clicking on the trash `icon`:
 
-![mainpage](./images/delete.png)
+![mainpage](./public/assets/images/delete.png)
 
 You can also see the `note content` by clicking on the preview:
 
-![mainpage](./images/note-content.png)
+![mainpage](./public/assets/images/note-content.png)
 
 While displaying the `note content` you can create a new note with the `plus icon`:
 
-![mainpage](./images/plus-icon.png)
+![mainpage](./public/assets/images/plus-icon.png)
 
 ## <span style="color:violet">Credits</span>
 
