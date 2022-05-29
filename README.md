@@ -11,47 +11,61 @@
 
 ## <span style="color:violet">Description</span>
 
-> Welcome to the Express Note Taker! This app uses Node's file system and Express JS to create and delete notes. Run Node JS in your terminal and then use the interface in the webpage to create and delete notes.
+> Welcome to the Express Note Taker! This app uses Node's file system and Express JS to create and delete notes. Visit the provided link and then use the interface in the webpage to create and delete notes.
 
 ## <span style="color:violet">Stack</span>
 
 <span style="color:skyblue">**1-JavaScript**</span>
 
-<span style="color:skyblue">**2-Node JS**</span> [(link)](https://nodejs.org/en/)
+<span style="color:skyblue">**2-CSS**</span>
 
-<span style="color:skyblue">**3-Express JS**</span> [(link)](https://expressjs.com/)
+<span style="color:skyblue">**3-Node JS**</span> [(link)](https://nodejs.org/en/)
+
+<span style="color:skyblue">**4-Express JS**</span> [(link)](https://expressjs.com/)
+
+<span style="color:skyblue">**5-Heroku**</span> [(link)](https://www.heroku.com/platform)
+
+## <span style="color:violet">How to use</span>
+
+Use this `link` to access the App: [Adrian Strozzi - Express Note Taker](https://drive.google.com/file/d/1jfGz8Xs4U8RkGF-7WY0VY_lAHDw_tWhm/view?usp=sharing)
 
 ## <span style="color:violet">Video Tutorial</span>
 
 Use this `link` to access a video tutorial: [Adrian Strozzi - Express Note Taker](https://drive.google.com/file/d/1jfGz8Xs4U8RkGF-7WY0VY_lAHDw_tWhm/view?usp=sharing)
 
-## <span style="color:violet">Usage</span>
+## <span style="color:violet">Quick Guide:</span>
 
-Below is an example of the Main App **README.md file**:
+Once you access you will be taken to the `Home Page` just click on the `Get Started` button:
 
-![mainpage](./images/readme.png)
+![mainpage](./images/homer.png)
 
-First download this app as a `Zip file` extract it and open it in VS Code or you preferred code editor.
+You will see the main `Notes` interface:
 
-Go to the root folder and install `Inquirer` with npm install:
+![mainpage](./images/note.page.png)
 
-![mainpage](./images/npminstall.png)
+Just start writing some text in the `note title` and `note text`:
 
-Go to the root folder and use `node index.js` to initialize the questions:
+![mainpage](./images/note-write.png)
 
-![mainpage](./images/node.png)
+Once you have finished writing your note, click on the `save icon` that will appear in the top-right:
 
-Inquirer will start a couple of `questions`, just write your answer and hit Enter when finished:
+![mainpage](./images/save.png)
 
-![mainpage](./images/question.png)
+Your `new note` will be saved and shown on the left side:
 
-Once you answer a couple of questions you will get a `confirmation`:
+![mainpage](./images/created-note.png)
 
-![mainpage](./images/confirmation.png)
+You can `delete` your note by clicking on the trash `icon`:
 
-Your new `README file` will be generated at the document folder:
+![mainpage](./images/delete.png)
 
-![mainpage](./images/documentfolder.png)
+You can also see the `note content` by clicking on the preview:
+
+![mainpage](./images/note-content.png)
+
+While displaying the `note content` you can create a new note with the `plus icon`:
+
+![mainpage](./images/plus-icon.png)
 
 ## <span style="color:violet">Credits</span>
 

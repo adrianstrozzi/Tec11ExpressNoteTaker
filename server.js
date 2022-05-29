@@ -6,35 +6,36 @@ const uuid = require('./helpers/uuid');
 const app = express();
 const PORT = process.env.PORT || 3001
 
-const notes = require('./db/db.json');
 
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 
+// GET method return index.html when visiting the root path
+app.get('/', (req, res) =>
+  res.sendFile(path.join(__dirname, './public/index.html'))
+);
 
+// GET method to return notes.html when visitin the notes path
 app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, './public/notes.html'))
 );
 
+// GET method to return the updated notes from the db to the HTML
 app.get('/api/notes', (req, res) => {
   console.info(`${req.method} request received to get Notes`);
-  return res.json(notes);
+  return res.sendFile(path.join(__dirname, './db/db.json'));
 });
 
-app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, './public/index.html'))
-);
 
 
 // POST Route for submitting feedback
 app.post('/api/notes', (req, res) => {
   // Destructuring assignment for the items in req.body
   const { title, text } = req.body;
-
   // If all the required properties are present
-  if (title && text) {
+  if (req.body) {
     // Variable for the object we will save
     const newNote = {
       title,
@@ -49,10 +50,11 @@ app.post('/api/notes', (req, res) => {
       body: newNote,
     };
 
+
     res.json(response);
     console.info(`New note with ID ${newNote.id} created.`);
   } else {
-    res.json('Error in posting feedback');
+    res.json('Error in posting note');
   }
 });
 
