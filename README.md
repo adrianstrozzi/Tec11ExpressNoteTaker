@@ -4,10 +4,11 @@
 
 1. [Description](#Description)
 2. [Stack](#Stack)
-3. [Video Tutorial](#Video-Tutorial)
-4. [Usage](#Usage)
-5. [Credits](#Credits)
-6. [License](#License)
+3. [How To Use](#How-To-Use)
+4. [Video Tutorial](#Video-Tutorial)
+5. [Usage](#Usage)
+6. [Credits](#Credits)
+7. [License](#License)
 
 ## <span style="color:violet">Description</span>
 
@@ -25,15 +26,15 @@
 
 <span style="color:skyblue">**5-Heroku**</span> [(link)](https://www.heroku.com/platform)
 
-## <span style="color:violet">How to use</span>
+## <span style="color:violet">How To Use</span>
 
 Use this `link` to access the App: [Express Note Taker](https://limitless-oasis-12962.herokuapp.com/)
 
 ## <span style="color:violet">Video Tutorial</span>
 
-Use this `link` to access a video tutorial: [Adrian Strozzi - Express Note Taker](https://drive.google.com/file/d/1jfGz8Xs4U8RkGF-7WY0VY_lAHDw_tWhm/view?usp=sharing)
+Use this `link` to access a video tutorial: [Adrian Strozzi - Express Note Taker](https://drive.google.com/file/d/1DrEwKqALPL6Xh3z71FNUZW9DE_X8dyJ3/view?usp=sharing)
 
-## <span style="color:violet">Quick Guide:</span>
+## <span style="color:violet">Quick Guide</span>
 
 Once you access you will be taken to the `Home Page` just click on the `Get Started` button:
 
