@@ -32,7 +32,7 @@ Use this `link` to access the App: [Express Note Taker](https://limitless-oasis-
 
 ## <span style="color:violet">Video Tutorial</span>
 
-Use this `link` to access a video tutorial: [Adrian Strozzi - Express Note Taker](https://drive.google.com/file/d/1DrEwKqALPL6Xh3z71FNUZW9DE_X8dyJ3/view?usp=sharing)
+Use this `link` to access a video tutorial: [Adrian Strozzi - Express Note Taker](https://youtu.be/0YVTuEnhgto)
 
 ## <span style="color:violet">Quick Guide</span>
 
